@@ -4,7 +4,7 @@ Static website previews built by **TechnoTaau Team** for client review, hosted o
 
 | Project | Preview | Plan |
 |---|---|---|
-| Big Love Rescue (nonprofit dog rescue, Cypress TX) | [`/big-love-rescue/`](big-love-rescue/) | [`/big-love-rescue/proposal.html`](big-love-rescue/proposal.html) |
+| Big Love Rescue (nonprofit dog rescue, Cypress TX) | [Live preview](https://technotaau.github.io/UM/big-love-rescue/) | [5-phase plan](https://technotaau.github.io/UM/big-love-rescue/proposal.html) |
 
 ## Big Love Rescue: website upgrade concept
 
