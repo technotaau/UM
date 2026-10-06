@@ -63,7 +63,7 @@
     btn.addEventListener('click', function () {
       var on = btn.getAttribute('aria-pressed') !== 'true';
       btn.setAttribute('aria-pressed', on ? 'true' : 'false');
-      toast(on ? 'Saved to your favourites ♥' : 'Removed from favourites');
+      toast(on ? 'Saved to your favorites ♥' : 'Removed from favorites');
     });
   });
 
@@ -88,10 +88,10 @@
 
   // Donation amount picker
   var impacts = {
-    25: 'covers a <strong>dewormer and flea prevention</strong> for one foster dog.',
+    25: 'helps cover <strong>dewormer and flea prevention</strong> for one foster dog.',
     50: 'helps cover a <strong>microchip and rabies vaccine</strong> for a new intake.',
     100: 'helps cover <strong>a round of puppy or adult booster shots</strong> plus exam fees.',
-    250: 'goes toward <strong>spay/neuter surgery</strong>, the biggest single cost for most rescues.'
+    250: 'goes toward <strong>spay/neuter surgery</strong>, one of our biggest costs.'
   };
   var amountBtns = document.querySelectorAll('.amount');
   var impactLine = document.querySelector('.impact-line');
@@ -147,7 +147,7 @@
       var body = (d.get('message') || '') + '\n\n' + (d.get('name') || '') + '\n' + (d.get('email') || '') + (d.get('phone') ? '\n' + d.get('phone') : '');
       window.location.href = 'mailto:blrescuetexas@gmail.com?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
       var status = form.querySelector('.form-status');
-      if (status) status.textContent = 'Opening your email app… Thank you for reaching out!';
+      if (status) status.textContent = 'Opening your email app.';
     });
   }
 
