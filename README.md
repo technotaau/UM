@@ -5,6 +5,7 @@ Static website previews built by **TechnoTaau Team** for client review, hosted o
 | Project | Preview | Plan |
 |---|---|---|
 | Big Love Rescue (nonprofit dog rescue, Cypress TX) | [Live preview](https://technotaau.github.io/UM/big-love-rescue/) | [5-phase plan](https://technotaau.github.io/UM/big-love-rescue/proposal.html) |
+| Houston Iron Fence (iron fence contractor, Cypress TX) | [SEO audit](https://technotaau.github.io/UM/houston-iron-fence/) | Five-phase plan inside the audit |
 
 ## Big Love Rescue: website upgrade concept
 

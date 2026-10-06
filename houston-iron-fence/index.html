@@ -1,0 +1,576 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SEO audit: houstonironfence.com | USHU Marketing</title>
+<meta name="description" content="Technical, on-page, local and performance SEO audit of houstonironfence.com, prepared by USHU Marketing, October 2026.">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#111111">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800&family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&display=swap">
+<style>
+  :root {
+    --ink: #111111; --slate: #1e293b; --slate-2: #334155; --muted: #5b6676; --line: #e5e7eb; --bg: #f8fafc; --paper: #ffffff;
+    --orange: #f97316; --orange-deep: #c2410c; --orange-soft: #fff1e6; --blue: #046bd2; --blue-soft: #e8f1fb;
+    --crit: #b91c1c; --crit-soft: #fdecec; --high: #c2410c; --high-soft: #fff1e6; --med: #a16207; --med-soft: #fdf6dc; --low: #475569; --low-soft: #eef2f6; --good: #15803d; --good-soft: #e8f6ed;
+    --radius: 16px; --shadow: 0 10px 30px -12px rgba(17, 17, 17, .18);
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { margin: 0; font-family: "Source Sans 3", system-ui, sans-serif; font-size: 18px; line-height: 1.6; color: var(--ink); background: var(--bg); -webkit-font-smoothing: antialiased; }
+  h1, h2, h3, h4 { font-family: "Outfit", system-ui, sans-serif; line-height: 1.15; margin: 0 0 .5em; letter-spacing: -.01em; }
+  h1 { font-size: clamp(2.1rem, 5vw, 3.4rem); font-weight: 800; }
+  h2 { font-size: clamp(1.6rem, 3.4vw, 2.2rem); font-weight: 700; }
+  h3 { font-size: 1.2rem; font-weight: 700; }
+  p { margin: 0 0 1em; }
+  a { color: var(--blue); text-underline-offset: 3px; }
+  code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: .86em; background: var(--low-soft); padding: .1em .35em; border-radius: 5px; word-break: break-word; }
+  img { max-width: 100%; display: block; }
+  .container { max-width: 1120px; margin: 0 auto; padding: 0 16px; }
+  @media (min-width: 700px) { .container { padding: 0 28px; } }
+
+  .topbar { background: var(--paper); border-bottom: 1px solid var(--line); position: sticky; top: 0; z-index: 20; }
+  .topbar .container { display: flex; align-items: center; justify-content: space-between; gap: 1rem; height: 64px; }
+  .topbar img { height: 30px; width: auto; }
+  .topbar a.cta { background: var(--orange); color: #fff; font-weight: 700; text-decoration: none; padding: .55rem 1rem; border-radius: 999px; font-size: .95rem; white-space: nowrap; }
+  .topbar a.cta:hover { background: var(--orange-deep); }
+
+  .hero { background: var(--slate); color: #e2e8f0; padding: clamp(40px, 7vw, 80px) 0 clamp(48px, 7vw, 88px); position: relative; overflow: hidden; }
+  .hero::after { content: ""; position: absolute; right: -140px; top: -140px; width: 420px; height: 420px; border-radius: 50%; background: radial-gradient(circle, rgba(249, 115, 22, .35), transparent 70%); }
+  .hero h1 { color: #fff; max-width: 18ch; overflow-wrap: break-word; }
+  @media (max-width: 420px) { .hero h1 { font-size: 1.9rem; } }
+  .hero h1 span { color: var(--orange); }
+  .eyebrow { display: inline-block; font-family: "Outfit", sans-serif; font-weight: 700; font-size: .78rem; letter-spacing: .14em; text-transform: uppercase; color: var(--orange); margin-bottom: .9rem; }
+  .hero .lede { font-size: 1.2rem; max-width: 62ch; color: #cbd5e1; }
+  .meta { display: grid; grid-template-columns: repeat(4, 1fr); gap: .8rem; margin-top: 2rem; position: relative; z-index: 1; }
+  .meta div { background: rgba(255, 255, 255, .06); border: 1px solid rgba(255, 255, 255, .12); border-radius: 12px; padding: .8rem 1rem; }
+  .meta small { display: block; font-size: .72rem; letter-spacing: .12em; text-transform: uppercase; color: #94a3b8; font-weight: 700; }
+  .meta strong { color: #fff; font-family: "Outfit", sans-serif; font-weight: 600; }
+  .meta a { color: #fff; }
+  @media (max-width: 760px) { .meta { grid-template-columns: 1fr 1fr; } }
+  @media (max-width: 420px) { .meta { grid-template-columns: 1fr; } }
+
+  .toc { background: var(--paper); border: 1px solid var(--line); border-radius: var(--radius); padding: 1.2rem 1.4rem; margin: -36px auto 0; position: relative; z-index: 2; box-shadow: var(--shadow); }
+  .toc ol { margin: 0; padding-left: 1.2rem; columns: 2 240px; column-gap: 2rem; }
+  .toc li { margin: .15rem 0; break-inside: avoid; }
+  .toc a { color: var(--slate); text-decoration: none; font-weight: 600; }
+  .toc a:hover { color: var(--orange-deep); text-decoration: underline; }
+
+  section { padding: clamp(44px, 6vw, 72px) 0 0; }
+  .section-head p { color: var(--muted); max-width: 70ch; }
+
+  .verdict { background: var(--paper); border-left: 6px solid var(--orange); border-radius: 0 var(--radius) var(--radius) 0; padding: 1.3rem 1.5rem; box-shadow: var(--shadow); margin-bottom: 1.6rem; }
+  .verdict p:last-child { margin: 0; }
+
+  .tiles { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; margin: 1.4rem 0; }
+  .tile { background: var(--paper); border: 1px solid var(--line); border-radius: var(--radius); padding: 1.1rem 1.2rem; }
+  .tile strong { display: block; font-family: "Outfit", sans-serif; font-size: 2rem; font-weight: 800; line-height: 1.05; white-space: nowrap; }
+  .tile span { color: var(--muted); font-size: .95rem; line-height: 1.35; display: block; margin-top: .3rem; }
+  .tile.bad strong { color: var(--crit); } .tile.warn strong { color: var(--high); } .tile.ok strong { color: var(--good); }
+  @media (max-width: 860px) { .tiles { grid-template-columns: 1fr 1fr; } }
+  @media (max-width: 400px) { .tiles { grid-template-columns: 1fr; } }
+  .tiles > *, .scores > *, .two > *, .score > div { min-width: 0; }
+  th code, td code { word-break: break-all; }
+
+  .scores { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
+  .score { background: var(--paper); border: 1px solid var(--line); border-radius: var(--radius); padding: 1.1rem 1.2rem; display: flex; gap: 1rem; align-items: flex-start; }
+  .grade { flex: none; width: 54px; height: 54px; border-radius: 14px; display: grid; place-items: center; font-family: "Outfit", sans-serif; font-weight: 800; font-size: 1.5rem; color: #fff; }
+  .g-a { background: var(--good); } .g-b { background: #4d7c0f; } .g-c { background: var(--med); } .g-d { background: var(--high); } .g-f { background: var(--crit); }
+  .score h3 { margin: 0 0 .2rem; font-size: 1.08rem; }
+  .score p { margin: 0; color: var(--muted); font-size: .95rem; line-height: 1.45; }
+  @media (max-width: 900px) { .scores { grid-template-columns: 1fr 1fr; } }
+  @media (max-width: 560px) { .scores { grid-template-columns: 1fr; } }
+
+  .good-list { display: grid; grid-template-columns: 1fr 1fr; gap: .6rem 1.4rem; list-style: none; padding: 0; margin: 0; }
+  .good-list li { position: relative; padding-left: 1.8rem; }
+  .good-list li::before { content: ""; position: absolute; left: 0; top: .3em; width: 1.1rem; height: 1.1rem; border-radius: 50%; background: var(--good) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M20 6 9 17l-5-5'/%3E%3C/svg%3E") center / 11px no-repeat; }
+  @media (max-width: 700px) { .good-list { grid-template-columns: 1fr; } }
+
+  .issue { background: var(--paper); border: 1px solid var(--line); border-radius: var(--radius); padding: 1.2rem 1.4rem; margin-bottom: 1rem; }
+  .issue-top { display: flex; flex-wrap: wrap; align-items: center; gap: .5rem .8rem; margin-bottom: .5rem; }
+  .issue-top h3 { margin: 0; flex: 1 1 300px; }
+  .pill { font-family: "Outfit", sans-serif; font-weight: 700; font-size: .74rem; letter-spacing: .06em; text-transform: uppercase; padding: .25rem .7rem; border-radius: 999px; white-space: nowrap; }
+  .p-crit { background: var(--crit-soft); color: var(--crit); } .p-high { background: var(--high-soft); color: var(--high); } .p-med { background: var(--med-soft); color: var(--med); } .p-low { background: var(--low-soft); color: var(--low); }
+  .p-effort { background: var(--blue-soft); color: var(--blue); }
+  .issue dl { display: grid; grid-template-columns: 110px 1fr; gap: .35rem 1rem; margin: .4rem 0 0; }
+  .issue dt { font-weight: 700; color: var(--slate-2); font-size: .9rem; text-transform: uppercase; letter-spacing: .06em; padding-top: .15rem; }
+  .issue dd { margin: 0; }
+  @media (max-width: 600px) { .issue dl { grid-template-columns: 1fr; gap: 0; } .issue dt { margin-top: .6rem; } }
+  .group-title { display: flex; align-items: center; gap: .6rem; margin: 2rem 0 1rem; }
+  .group-title .dot { width: 12px; height: 12px; border-radius: 50%; }
+
+  .table-wrap { background: var(--paper); border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; }
+  table { width: 100%; border-collapse: collapse; font-size: .96rem; }
+  th, td { text-align: left; vertical-align: top; padding: .75rem 1rem; border-bottom: 1px solid var(--line); }
+  thead th { background: var(--slate); color: #fff; font-family: "Outfit", sans-serif; font-weight: 600; font-size: .85rem; letter-spacing: .04em; }
+  tbody tr:last-child > * { border-bottom: 0; }
+  td.num { white-space: nowrap; font-variant-numeric: tabular-nums; }
+  .no { color: var(--crit); font-weight: 700; } .yes { color: var(--good); font-weight: 700; }
+  @media (max-width: 700px) {
+    .stack thead { display: none; }
+    .stack, .stack tbody, .stack tr, .stack td, .stack th { display: block; width: 100%; }
+    .stack tr { padding: .9rem 1rem; border-bottom: 1px solid var(--line); }
+    .stack tbody tr:last-child { border-bottom: 0; }
+    .stack td, .stack th { border: 0; padding: .1rem 0; }
+    .stack td::before { content: attr(data-label); display: block; font-size: .72rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); margin-top: .5rem; }
+  }
+
+  .two { display: grid; grid-template-columns: 1.1fr .9fr; gap: 2rem; align-items: start; }
+  @media (max-width: 860px) { .two { grid-template-columns: 1fr; } }
+  figure { margin: 0; }
+  figure img { border-radius: 18px; border: 1px solid var(--line); box-shadow: var(--shadow); width: 100%; max-width: 320px; height: auto; margin: 0 auto; }
+  figcaption { font-size: .9rem; color: var(--muted); text-align: center; margin-top: .7rem; }
+
+  .phases { display: grid; gap: 1rem; counter-reset: ph; }
+  .phase { background: var(--paper); border: 1px solid var(--line); border-radius: var(--radius); padding: 1.3rem 1.4rem 1.3rem 5.2rem; position: relative; }
+  .phase::before { counter-increment: ph; content: counter(ph); position: absolute; left: 1.3rem; top: 1.3rem; width: 2.8rem; height: 2.8rem; border-radius: 12px; background: var(--orange); color: #fff; display: grid; place-items: center; font-family: "Outfit", sans-serif; font-weight: 800; font-size: 1.3rem; }
+  .phase h3 { margin-bottom: .15rem; }
+  .phase .when { color: var(--muted); font-weight: 600; font-size: .92rem; margin-bottom: .6rem; }
+  .phase ul { margin: 0; padding-left: 1.1rem; }
+  .phase li { margin: .2rem 0; }
+  @media (max-width: 520px) { .phase { padding: 4.6rem 1.1rem 1.2rem; } .phase::before { left: 1.1rem; top: 1.1rem; } }
+
+  .note { background: var(--blue-soft); border-radius: 12px; padding: .9rem 1.1rem; font-size: .95rem; color: var(--slate); }
+  .sources { font-size: .92rem; color: var(--muted); }
+  .sources li { margin: .2rem 0; word-break: break-word; }
+
+  .cta-band { background: var(--slate); color: #cbd5e1; border-radius: 22px; padding: clamp(1.6rem, 4vw, 2.6rem); display: grid; grid-template-columns: 1.4fr auto; gap: 1.5rem; align-items: center; margin-top: clamp(44px, 6vw, 72px); }
+  .cta-band h2 { color: #fff; margin-bottom: .3em; }
+  .cta-band p { margin: 0; }
+  .btn { display: inline-block; background: var(--orange); color: #fff; font-weight: 700; text-decoration: none; padding: .9rem 1.4rem; border-radius: 999px; white-space: nowrap; }
+  .btn:hover { background: var(--orange-deep); color: #fff; }
+  @media (max-width: 760px) { .cta-band { grid-template-columns: 1fr; } }
+
+  footer { padding: 2.5rem 0 3rem; color: var(--muted); font-size: .92rem; }
+  footer .container { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 1rem; align-items: center; border-top: 1px solid var(--line); padding-top: 1.5rem; }
+  footer img { height: 26px; width: auto; }
+  @media print { .topbar { position: static; } .toc, .cta-band { break-inside: avoid; } .issue, .phase, .score { break-inside: avoid; } }
+</style>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="container">
+    <a href="https://ushumarketing.com/" target="_blank" rel="noopener" aria-label="USHU Marketing"><img src="assets/ushu-logo.png" alt="USHU Marketing" width="163" height="30"></a>
+    <a class="cta" href="#plan">See the action plan</a>
+  </div>
+</header>
+
+<main>
+<div class="hero">
+  <div class="container">
+    <span class="eyebrow">SEO audit report</span>
+    <h1>houstonironfence<wbr>.com: <span>solid build, missing proof.</span></h1>
+    <p class="lede">We crawled all 59 pages, tested speed on mobile and desktop, reviewed the code and structured data, and checked how the business shows up in Houston searches. This report lists what is working, what is holding the site back and the order we would fix it in.</p>
+    <div class="meta">
+      <div><small>Prepared for</small><strong>Houston Iron Fence</strong></div>
+      <div><small>Prepared by</small><strong><a href="https://ushumarketing.com/" target="_blank" rel="noopener">USHU Marketing</a></strong></div>
+      <div><small>Website</small><strong>houstonironfence.com</strong></div>
+      <div><small>Audit date</small><strong>October 6, 2026</strong></div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <nav class="toc" aria-label="Contents">
+    <ol>
+      <li><a href="#summary">Summary and scorecard</a></li>
+      <li><a href="#working">What is working</a></li>
+      <li><a href="#issues">Issues by priority</a></li>
+      <li><a href="#local">Local search and competitors</a></li>
+      <li><a href="#speed">Speed and mobile</a></li>
+      <li><a href="#content">Content and on-page</a></li>
+      <li><a href="#plan">Five-phase action plan</a></li>
+      <li><a href="#appendix">Appendix and method</a></li>
+    </ol>
+  </nav>
+
+  <!-- SUMMARY -->
+  <section id="summary">
+    <div class="section-head">
+      <span class="eyebrow">1. Summary</span>
+      <h2>The short version</h2>
+    </div>
+    <div class="verdict">
+      <p><strong>The website is technically well built.</strong> Every page loads, the code is clean, each page has a unique title and the structured data is detailed. Most of the classic technical SEO boxes are already ticked.</p>
+      <p><strong>What it lacks is proof that a real local company stands behind it.</strong> There are no customer reviews, no photos of real jobs, no links to a Google Business Profile or any other listing, and no analytics. Google weighs exactly these signals when it decides which fence company to show a Houston homeowner. In our test searches the site did not appear for any of the main iron fence and gate searches, while companies with years of reviews did.</p>
+      <p>The good news: the hard technical work is done. The fixes below are mostly about adding real-world proof and tightening what already exists.</p>
+    </div>
+
+    <div class="tiles">
+      <div class="tile ok"><strong>59 / 59</strong><span>Pages load correctly (status 200)</span></div>
+      <div class="tile bad"><strong>13</strong><span>Broken internal links pointing to pages that do not exist</span></div>
+      <div class="tile bad"><strong>0 of 56</strong><span>Images that show the company's own work (all are stock photos)</span></div>
+      <div class="tile bad"><strong>0</strong><span>Customer reviews on the site, and none found in our searches</span></div>
+      <div class="tile bad"><strong>None</strong><span>Analytics or conversion tracking installed</span></div>
+      <div class="tile warn"><strong>~50%</strong><span>Wording shared between the 16 city pages</span></div>
+      <div class="tile warn"><strong>3.1s / 4.3s</strong><span>Mobile load of main content: homepage and Katy page (target under 2.5s)</span></div>
+      <div class="tile ok"><strong>100</strong><span>Lighthouse SEO and best practices score</span></div>
+    </div>
+
+    <h3 style="margin-top:2rem">Scorecard (our assessment)</h3>
+    <div class="scores">
+      <div class="score"><div class="grade g-b">B+</div><div><h3>Technical foundation</h3><p>Clean crawl, correct canonicals, sitemap and redirects. Held back by 13 broken links and a double redirect.</p></div></div>
+      <div class="score"><div class="grade g-b">B</div><div><h3>On-page SEO</h3><p>One H1 per page and unique titles. 14 titles and 14 descriptions are too long to show in full.</p></div></div>
+      <div class="score"><div class="grade g-b">B</div><div><h3>Speed and mobile</h3><p>Mobile scores 83 to 92. Fonts and stock images slow the first screen. The quote form is buried on phones.</p></div></div>
+      <div class="score"><div class="grade g-c">C</div><div><h3>Content quality</h3><p>20 strong, unique articles. City pages are templated, trust pages are thin and placeholder text appears on 19 pages.</p></div></div>
+      <div class="score"><div class="grade g-f">F</div><div><h3>Local SEO and trust</h3><p>No reviews, no real photos, no linked listings, a shared office address and 24/7 hours.</p></div></div>
+      <div class="score"><div class="grade g-f">F</div><div><h3>Tracking</h3><p>No analytics, no call tracking and no form conversion tracking, so results cannot be measured.</p></div></div>
+    </div>
+  </section>
+
+  <!-- WORKING -->
+  <section id="working">
+    <div class="section-head">
+      <span class="eyebrow">2. Strengths</span>
+      <h2>What is working</h2>
+      <p>These are worth keeping as they are. Many contractor sites we audit get these wrong.</p>
+    </div>
+    <ul class="good-list">
+      <li>All 59 sitemap pages return status 200. Unknown pages correctly return 404.</li>
+      <li>Clean URLs. Missing trailing slashes and <code>/index.html</code> redirect properly.</li>
+      <li>Every page has a self-referencing canonical tag and exactly one H1.</li>
+      <li>No duplicate titles or meta descriptions anywhere on the site.</li>
+      <li>XML sitemap with all 59 pages, referenced in <code>robots.txt</code>.</li>
+      <li>Detailed LocalBusiness, Service, FAQ and Article structured data with zero parsing errors.</li>
+      <li>Fast server: 50 to 100 ms response, HTTP/2, Brotli compression and a CDN.</li>
+      <li>Phone number 346-579-7200 is identical on every page.</li>
+      <li>20 unique articles of about 900 words each on real buyer questions such as cost, permits and rust.</li>
+      <li>Multi-step quote form sends leads to a CRM, plus a sticky call bar on mobile.</li>
+    </ul>
+  </section>
+
+  <!-- ISSUES -->
+  <section id="issues">
+    <div class="section-head">
+      <span class="eyebrow">3. Issues</span>
+      <h2>Issues by priority</h2>
+      <p>Ranked by how much each one limits leads from search. Effort is our estimate for a developer or marketer familiar with the site.</p>
+    </div>
+
+    <div class="group-title"><span class="dot" style="background:var(--crit)"></span><h3 style="margin:0">Critical</h3></div>
+
+    <article class="issue">
+      <div class="issue-top"><h3>C1. No analytics or conversion tracking</h3><span class="pill p-crit">Critical</span><span class="pill p-effort">Effort: 2 to 4 hours</span></div>
+      <dl>
+        <dt>Found</dt><dd>No Google Analytics, Google Tag Manager, Meta Pixel or similar tag on any page. No Search Console verification tag (it may be verified by DNS, which we cannot see).</dd>
+        <dt>Why it matters</dt><dd>There is no way to know how many people visit, which pages bring calls or whether any SEO work is paying off.</dd>
+        <dt>Fix</dt><dd>Install Google Analytics 4 through Tag Manager. Track phone link clicks and quote form submissions as conversions. Add call tracking to the main number. Verify Google Search Console and Bing Webmaster Tools and submit the sitemap to both.</dd>
+      </dl>
+    </article>
+
+    <article class="issue">
+      <div class="issue-top"><h3>C2. No customer reviews anywhere</h3><span class="pill p-crit">Critical</span><span class="pill p-effort">Effort: ongoing</span></div>
+      <dl>
+        <dt>Found</dt><dd>The reviews page says: "We don't have verified customer reviews published on this page yet." The homepage and all 16 city pages show a "What customers say" section with the same placeholder message. A web search for the business name with reviews returned competitors only.</dd>
+        <dt>Why it matters</dt><dd>Reviews are one of the strongest factors for showing in Google Maps and the local results, and the first thing homeowners check. Competitors in the results show ratings such as 4.6 stars from 172 reviews (Griffin Fence).</dd>
+        <dt>Fix</dt><dd>Start a simple review routine: ask every completed customer for a Google review by text, with a direct link. Aim for a steady flow each week rather than a burst. Show real reviews on the site once they exist and remove the placeholder sections until then.</dd>
+      </dl>
+    </article>
+
+    <article class="issue">
+      <div class="issue-top"><h3>C3. Business listing and address signals are weak</h3><span class="pill p-crit">Critical</span><span class="pill p-effort">Effort: 1 to 2 weeks</span></div>
+      <dl>
+        <dt>Found</dt><dd>
+          The structured data lists no profiles (<code>sameAs</code> is empty), so there is no link to a Google Business Profile, Facebook, Yelp or BBB. In our searches, no third-party listing showed this phone number.<br>
+          The address, 12837 Louetta Rd, is a two-story office building with numbered suites (101 to 203) shared by a pharmacy, an insurance agency and other tenants. The site lists "1st &amp; 2nd Floor" with no suite number.<br>
+          The map on the About and Contact pages points to "Cypress, TX" in general, not to the business. Hours are listed as "Open 24 hours, 7 days a week".
+        </dd>
+        <dt>Why it matters</dt><dd>Google only allows a Business Profile address where staff work during business hours. Shared or virtual office addresses are a common reason profiles get suspended. Without a verified profile, the business cannot appear in the Google Maps results, where most local fence leads come from.</dd>
+        <dt>Fix</dt><dd>Confirm whether a Google Business Profile exists and who owns it. If the team is not staffed at Louetta Rd, set the profile up as a service-area business with the address hidden. If it is staffed, add the exact suite number everywhere. Use real working hours. Then build consistent listings on Bing Places, Apple Business Connect, Yelp, BBB, Angi, Houzz, Nextdoor and Facebook, and add all of them to <code>sameAs</code>. Embed the actual Business Profile map.</dd>
+      </dl>
+    </article>
+
+    <article class="issue">
+      <div class="issue-top"><h3>C4. Every image is a stock photo</h3><span class="pill p-crit">Critical</span><span class="pill p-effort">Effort: 1 to 3 weeks of job photos</span></div>
+      <dl>
+        <dt>Found</dt><dd>All 56 images on the site load from Unsplash, a free stock photo library. Only 23 different photos are used and one gate photo appears 9 times. The project gallery states: "The images below illustrate the styles and finishes available, not specific completed addresses."</dd>
+        <dt>Why it matters</dt><dd>For a contractor, photos of real work are the clearest proof of experience. Google's quality guidelines put weight on first-hand experience, and homeowners notice stock photos quickly. Original images can also rank in Google Images and on the Business Profile.</dd>
+        <dt>Fix</dt><dd>Photograph every job: before, during and after. Build the project gallery from real jobs with the area named (for example "Ornamental steel fence, Bridgeland, Cypress"). Replace hero images on the homepage and main service pages first. Host images on the site's own server in WebP format with descriptive file names.</dd>
+      </dl>
+    </article>
+
+    <div class="group-title"><span class="dot" style="background:var(--high)"></span><h3 style="margin:0">High</h3></div>
+
+    <article class="issue">
+      <div class="issue-top"><h3>H1. 13 broken internal links</h3><span class="pill p-high">High</span><span class="pill p-effort">Effort: 2 to 6 hours</span></div>
+      <dl>
+        <dt>Found</dt><dd>Pages link to 13 addresses that return "404 not found", including <code>/request-estimate/</code> (linked from a call to action), <code>/automatic-gate-repair/</code> (linked from 2 pages) and <code>/iron-fence-painting/</code>. The full list is in the appendix.</dd>
+        <dt>Why it matters</dt><dd>Broken links waste visitors and send Google to dead ends. Several of the missing pages cover real services people search for, such as automatic gate repair and solar gate openers.</dd>
+        <dt>Fix</dt><dd>Point <code>/request-estimate/</code> to the quote form. Build the missing service pages that match services the company actually offers. Remove the other links.</dd>
+      </dl>
+    </article>
+
+    <article class="issue">
+      <div class="issue-top"><h3>H2. City pages are near copies of each other</h3><span class="pill p-high">High</span><span class="pill p-effort">Effort: 2 to 4 weeks</span></div>
+      <dl>
+        <dt>Found</dt><dd>The 16 service-area pages have about 1,450 words of main text each, but on average 50% of that wording is identical (measured with 5-word phrase overlap after removing the shared form and footer). Every page uses the same headings with only the city swapped, for example "Iron Fence &amp; Gate Problems We See in Katy" and "Iron Fence &amp; Gate Problems We See in Conroe".</dd>
+        <dt>Why it matters</dt><dd>Google treats sets of pages that differ mainly by city name as doorway pages, which can hold down rankings for the whole site. They also give a homeowner in Katy no reason to believe the company has worked there.</dd>
+        <dt>Fix</dt><dd>Rewrite the top 5 or 6 markets (for example Cypress, Katy, The Woodlands, Spring, Houston and Memorial) with real local detail: jobs completed there, neighborhoods, HOA rules, permit notes and local reviews. Merge or remove the weaker city pages until there is real work to show for them.</dd>
+      </dl>
+    </article>
+
+    <article class="issue">
+      <div class="issue-top"><h3>H3. Placeholder text on 19 pages</h3><span class="pill p-high">High</span><span class="pill p-effort">Effort: 1 to 2 hours</span></div>
+      <dl>
+        <dt>Found</dt><dd>Messages such as "We're in the process of collecting and publishing verified customer reviews" and "The photos on our project gallery are style and inspiration examples" appear on the homepage, all 16 city pages, the reviews page and the projects page.</dd>
+        <dt>Why it matters</dt><dd>The honesty is good, but the result reads like an unfinished business to a visitor and adds repeated filler for Google.</dd>
+        <dt>Fix</dt><dd>Hide these sections until there is real content to show, then bring them back with actual reviews and photos.</dd>
+      </dl>
+    </article>
+
+    <article class="issue">
+      <div class="issue-top"><h3>H4. Quote form is buried on phones and main buttons fail contrast</h3><span class="pill p-high">High</span><span class="pill p-effort">Effort: 2 to 4 hours</span></div>
+      <dl>
+        <dt>Found</dt><dd>On a phone the homepage opens with a block of about 130 words over a dark photo, and the quote form starts well below the first screen. The orange "Get Free Quote" and "Call" buttons (white text on <code>#C97D2E</code>) have a contrast ratio of 3.25 to 1, under the 4.5 to 1 accessibility minimum.</dd>
+        <dt>Why it matters</dt><dd>Most local service searches happen on phones. A long intro pushes the form out of view, and low contrast makes the most important buttons harder to read outdoors.</dd>
+        <dt>Fix</dt><dd>Cut the hero text to one or two sentences and show a "Get my free quote" button and the phone number in the first screen. Darken the orange button color slightly (for example to <code>#B45309</code>, which reaches 5 to 1) or use dark text on it.</dd>
+      </dl>
+    </article>
+
+    <div class="group-title"><span class="dot" style="background:var(--med)"></span><h3 style="margin:0">Medium</h3></div>
+
+    <article class="issue">
+      <div class="issue-top"><h3>M1. Slow main image on mobile</h3><span class="pill p-med">Medium</span><span class="pill p-effort">Effort: 4 to 8 hours</span></div>
+      <dl>
+        <dt>Found</dt><dd>Largest Contentful Paint (when the main content appears) is 3.1s on the homepage and 4.3s on the Katy page in mobile tests. Google Fonts block the first paint by about 0.9s, and hero images load from Unsplash's servers. City pages do not preload their hero image.</dd>
+        <dt>Fix</dt><dd>Host fonts and images on the site itself, preload the hero image on every page, serve WebP or AVIF in mobile sizes, and set a one-year cache on the versioned CSS and JS files (currently 7 days).</dd>
+      </dl>
+    </article>
+
+    <article class="issue">
+      <div class="issue-top"><h3>M2. Titles and descriptions cut off in search results</h3><span class="pill p-med">Medium</span><span class="pill p-effort">Effort: 2 to 3 hours</span></div>
+      <dl>
+        <dt>Found</dt><dd>14 titles are longer than 60 characters and 14 descriptions are longer than 160 characters, so Google will shorten them. The homepage description is 193 characters. 11 descriptions are under 120 characters and leave space unused. The "| Houston Iron Fence" ending uses 21 characters on every title.</dd>
+        <dt>Fix</dt><dd>Rewrite to about 50 to 60 characters for titles and 140 to 155 for descriptions. Lead with the service and city, and drop the brand ending where space is tight.</dd>
+      </dl>
+    </article>
+
+    <article class="issue">
+      <div class="issue-top"><h3>M3. No social sharing tags</h3><span class="pill p-med">Medium</span><span class="pill p-effort">Effort: 1 to 2 hours</span></div>
+      <dl>
+        <dt>Found</dt><dd>None of the 59 pages has Open Graph or Twitter card tags.</dd>
+        <dt>Why it matters</dt><dd>When a page is shared by text, on Facebook or in Nextdoor, it shows no image and a generic preview. Neighbor referrals are a big lead source for fence companies.</dd>
+        <dt>Fix</dt><dd>Add <code>og:title</code>, <code>og:description</code>, <code>og:image</code> (a real project photo) and <code>twitter:card</code> to the page template.</dd>
+      </dl>
+    </article>
+
+    <article class="issue">
+      <div class="issue-top"><h3>M4. Thin "who we are" signals</h3><span class="pill p-med">Medium</span><span class="pill p-effort">Effort: 3 to 5 hours</span></div>
+      <dl>
+        <dt>Found</dt><dd>The About page names no owner, team members or license numbers and has no team photos. The 20 articles are credited to "Houston Iron Fence" rather than a person, have no images and 11 of them share the same publish date.</dd>
+        <dt>Fix</dt><dd>Add the owner's name, photo and years in the trade, the team, insurance and any licenses or certifications. Credit articles to a named person with a short bio, add a real photo to each and keep dates accurate.</dd>
+      </dl>
+    </article>
+
+    <article class="issue">
+      <div class="issue-top"><h3>M5. Structured data gaps</h3><span class="pill p-med">Medium</span><span class="pill p-effort">Effort: 1 to 2 hours</span></div>
+      <dl>
+        <dt>Found</dt><dd>The LocalBusiness markup has no <code>sameAs</code> profiles and no <code>geo</code> coordinates. Article markup has no <code>image</code>. FAQ markup is on 18 pages, but Google now shows FAQ results mainly for government and health sites, so it brings little visible benefit.</dd>
+        <dt>Fix</dt><dd>Add profile links and coordinates once listings exist, add images to articles and keep the hours in the markup identical to the Business Profile.</dd>
+      </dl>
+    </article>
+
+    <div class="group-title"><span class="dot" style="background:var(--low)"></span><h3 style="margin:0">Low</h3></div>
+
+    <article class="issue">
+      <div class="issue-top"><h3>L1. Redirects, security header and old URLs</h3><span class="pill p-low">Low</span><span class="pill p-effort">Effort: 1 hour</span></div>
+      <dl>
+        <dt>Found</dt><dd><code>http://houstonironfence.com</code> takes two redirects to reach the final page (http to https, then to www). There is no HSTS header. Google still has an old WordPress style address indexed (<code>/?page_id=329</code>), which suggests an earlier site; it now shows the homepage with a canonical tag.</dd>
+        <dt>Fix</dt><dd>Redirect every variant to <code>https://www.</code> in one step and add an HSTS header. Check Search Console for old URLs that still receive links and redirect them to the closest new page.</dd>
+      </dl>
+    </article>
+
+    <article class="issue">
+      <div class="issue-top"><h3>L2. Heading order and repeated forms</h3><span class="pill p-low">Low</span><span class="pill p-effort">Effort: 1 hour</span></div>
+      <dl>
+        <dt>Found</dt><dd>Some pages jump from H2 to H4. The homepage has three near identical "Get Your Free Quote" headings because the quote block appears more than once.</dd>
+        <dt>Fix</dt><dd>Keep heading levels in order and use one main quote form per page with buttons that scroll to it.</dd>
+      </dl>
+    </article>
+  </section>
+
+  <!-- LOCAL -->
+  <section id="local">
+    <div class="section-head">
+      <span class="eyebrow">4. Local search</span>
+      <h2>Who shows up instead</h2>
+      <p>We ran the main buying searches on October 6, 2026. This is a sample from a US web search, not a full rank tracker, and it does not include the Google Maps results.</p>
+    </div>
+    <div class="table-wrap">
+      <table class="stack">
+        <thead><tr><th scope="col">Search</th><th scope="col">Sites in the results</th><th scope="col">Houston Iron Fence</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">iron fence company Houston TX</th><td data-label="Sites in the results">Texas Fence &amp; Iron, MD Fence, Western Fence, Iron Fence Master, Atlas Fence, Rocket Fence, Rio Grande Fence</td><td data-label="Houston Iron Fence" class="no">Not found</td></tr>
+          <tr><th scope="row">wrought iron fence installation Cypress TX</th><td data-label="Sites in the results">Elite Cypress Fence, Cypress Fencing Company, MD Fence, Griffin Fence, Brian The Fence Guy, M&amp;D Fencing, St. Pierre Fence</td><td data-label="Houston Iron Fence" class="no">Not found</td></tr>
+          <tr><th scope="row">automatic gate installation Houston</th><td data-label="Sites in the results">My Garage &amp; Gates, Texas Fence, Automatic Gate Company, Gulf Coast Fence, Spectrum Gate, Griffin Fence</td><td data-label="Houston Iron Fence" class="no">Not found</td></tr>
+          <tr><th scope="row">wrought iron fence cost Houston per foot</th><td data-label="Sites in the results">Angi, HomeGuide, homeyou, Gulf Coast Fence, Mustang Fencing, ProMatcher</td><td data-label="Houston Iron Fence" class="no">Not found</td></tr>
+          <tr><th scope="row">Business name with phone number</th><td data-label="Sites in the results">Other Cypress fence companies only. No listing used 346-579-7200.</td><td data-label="Houston Iron Fence" class="no">No listings found</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="margin-top:1rem">The competitors that appear share three things: years of history, a visible review count and photos of their own work. The strongest competitor city pages name local neighborhoods and real jobs. Griffin Fence's Cypress page, for example, mentions work in Fairfield and Bridgeland. That is the gap to close. The site already has strong cost and buyer guides, so once trust signals are in place it has good content to rank with.</p>
+    <p class="note"><strong>To confirm in Search Console:</strong> how many pages Google has indexed, which searches already bring impressions and whether any old URLs from an earlier site still have links pointing to them.</p>
+  </section>
+
+  <!-- SPEED -->
+  <section id="speed">
+    <div class="section-head">
+      <span class="eyebrow">5. Speed and mobile</span>
+      <h2>Speed test results</h2>
+      <p>Lighthouse 12 lab tests with mobile throttling, run October 6, 2026. These are lab measurements; real visitor data from Google was not part of this test.</p>
+    </div>
+    <div class="two">
+      <div>
+        <div class="table-wrap">
+          <table class="stack">
+            <thead><tr><th scope="col">Page</th><th scope="col">Performance</th><th scope="col">Main content (LCP)</th><th scope="col">Layout shift</th></tr></thead>
+            <tbody>
+              <tr><th scope="row">Homepage, mobile</th><td data-label="Performance" class="num">86</td><td data-label="Main content (LCP)" class="num">3.1s</td><td data-label="Layout shift" class="num">0.086</td></tr>
+              <tr><th scope="row">Homepage, desktop</th><td data-label="Performance" class="num">94</td><td data-label="Main content (LCP)" class="num">1.2s</td><td data-label="Layout shift" class="num">0.005</td></tr>
+              <tr><th scope="row">Katy city page, mobile</th><td data-label="Performance" class="num">83</td><td data-label="Main content (LCP)" class="num no">4.3s</td><td data-label="Layout shift" class="num">0.003</td></tr>
+              <tr><th scope="row">Iron fence installation, mobile</th><td data-label="Performance" class="num">92</td><td data-label="Main content (LCP)" class="num">2.9s</td><td data-label="Layout shift" class="num">0.034</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p style="margin-top:1rem">Google's target for main content is under 2.5 seconds on mobile. Layout shift is good on every page. Total page weight is light (179 to 442 KB), so the gains come from how the first screen loads rather than from page size.</p>
+        <p>Accessibility scored 94 to 95, with the button contrast issue (H4) and heading order (L2) as the only failures.</p>
+      </div>
+      <figure>
+        <img src="assets/evidence-mobile-hero.webp" alt="Screenshot of the houstonironfence.com homepage on a phone, showing a long paragraph over a dark photo and the quote form out of view" width="390" height="844" loading="lazy">
+        <figcaption>What a phone visitor sees first: a long paragraph, with the quote form out of view.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- CONTENT -->
+  <section id="content">
+    <div class="section-head">
+      <span class="eyebrow">6. Content and on-page</span>
+      <h2>Content review</h2>
+    </div>
+    <div class="table-wrap">
+      <table class="stack">
+        <thead><tr><th scope="col">Page group</th><th scope="col">Pages</th><th scope="col">Average words (main text)</th><th scope="col">Shared wording</th><th scope="col">Notes</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">Service pages</th><td data-label="Pages" class="num">11</td><td data-label="Average words" class="num">about 920</td><td data-label="Shared wording" class="num">25%</td><td data-label="Notes">Good depth. One stock image each. Several link to service pages that do not exist yet.</td></tr>
+          <tr><th scope="row">City pages</th><td data-label="Pages" class="num">16</td><td data-label="Average words" class="num">about 1,450</td><td data-label="Shared wording" class="num no">50%</td><td data-label="Notes">Same headings with the city swapped. Placeholder review and photo sections.</td></tr>
+          <tr><th scope="row">Articles</th><td data-label="Pages" class="num">20</td><td data-label="Average words" class="num">about 910</td><td data-label="Shared wording" class="num yes">4%</td><td data-label="Notes">Unique and useful topics. No images and no named author.</td></tr>
+          <tr><th scope="row">Trust pages</th><td data-label="Pages" class="num">6</td><td data-label="Average words" class="num no">about 190</td><td data-label="Shared wording" class="num">n/a</td><td data-label="Notes">Thin. The reviews page has 59 words of main text. Reviews and projects pages say they have no real content yet.</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="margin-top:1rem">Word counts exclude the menu, quote form and footer, which add about 500 words to every page. The writing is clear but often reads as generic. It uses the same phrasing patterns across pages and relies on long dashes and stock phrases. Rewriting the main pages in the owner's own voice, with specific job details, would help both visitors and Google's quality checks.</p>
+  </section>
+
+  <!-- PLAN -->
+  <section id="plan">
+    <div class="section-head">
+      <span class="eyebrow">7. Action plan</span>
+      <h2>Five-phase action plan</h2>
+      <p>Ordered so each phase makes the next one work better. Timelines assume the business can supply photos, reviews and listing access as we go.</p>
+    </div>
+    <div class="phases">
+      <div class="phase"><h3>Measure and fix the basics</h3><div class="when">Week 1</div>
+        <ul><li>Install Google Analytics 4 and Tag Manager with call and form conversions (C1)</li><li>Verify Search Console and Bing Webmaster Tools and submit the sitemap</li><li>Fix the 13 broken links and point <code>/request-estimate/</code> to the form (H1)</li><li>Hide placeholder sections (H3), fix button contrast and the mobile hero (H4)</li><li>Single-step redirects, HSTS and social sharing tags (L1, M3)</li></ul></div>
+      <div class="phase"><h3>Build the local foundation</h3><div class="when">Weeks 1 to 3</div>
+        <ul><li>Claim, verify and fully set up the Google Business Profile with the right categories, services, service areas and real hours (C3)</li><li>Decide on the address: staffed suite or hidden service-area address</li><li>Create matching listings on Bing, Apple, Yelp, BBB, Angi, Houzz, Nextdoor and Facebook</li><li>Add all profiles to the structured data and embed the real map</li></ul></div>
+      <div class="phase"><h3>Add real proof</h3><div class="when">Weeks 2 to 6</div>
+        <ul><li>Start the review routine after every job (C2)</li><li>Photograph every job and rebuild the project gallery with real work by area (C4)</li><li>Upgrade the About page with the owner, team, insurance and licenses (M4)</li><li>Show real reviews on the homepage and city pages</li></ul></div>
+      <div class="phase"><h3>Upgrade the content</h3><div class="when">Weeks 4 to 8</div>
+        <ul><li>Rewrite the top 5 or 6 city pages with local jobs and details, and merge the rest (H2)</li><li>Rewrite long titles and descriptions (M2)</li><li>Self-host images and fonts and preload hero images to reach under 2.5s on mobile (M1)</li><li>Add photos and a named author to every article</li></ul></div>
+      <div class="phase"><h3>Grow authority and leads</h3><div class="when">Month 3 onward</div>
+        <ul><li>Build the missing service pages people search for: automatic gate repair, gate access control and solar gate openers</li><li>Earn local links from HOAs, suppliers, sponsorships and the Cypress chamber of commerce</li><li>Promote the Houston cost guide as a link-worthy resource</li><li>Monthly report on calls, form leads, rankings and reviews</li></ul></div>
+    </div>
+  </section>
+
+  <!-- APPENDIX -->
+  <section id="appendix">
+    <div class="section-head">
+      <span class="eyebrow">8. Appendix</span>
+      <h2>Details and method</h2>
+    </div>
+
+    <h3>Broken internal links (all return 404)</h3>
+    <div class="table-wrap">
+      <table class="stack">
+        <thead><tr><th scope="col">Missing page</th><th scope="col">Linked from</th><th scope="col">Suggested action</th></tr></thead>
+        <tbody>
+          <tr><th scope="row"><code>/request-estimate/</code></th><td data-label="Linked from">1 page (call to action)</td><td data-label="Suggested action">Redirect to the quote form</td></tr>
+          <tr><th scope="row"><code>/automatic-gate-repair/</code></th><td data-label="Linked from">2 pages</td><td data-label="Suggested action">Build the page</td></tr>
+          <tr><th scope="row"><code>/resources/how-often-paint-iron-fence/</code></th><td data-label="Linked from">2 pages</td><td data-label="Suggested action">Write the article or remove the links</td></tr>
+          <tr><th scope="row"><code>/electric-driveway-gates/</code></th><td data-label="Linked from">1 page</td><td data-label="Suggested action">Build the page or link to driveway gates</td></tr>
+          <tr><th scope="row"><code>/gate-access-control/</code></th><td data-label="Linked from">1 page</td><td data-label="Suggested action">Build the page</td></tr>
+          <tr><th scope="row"><code>/solar-gate-openers/</code></th><td data-label="Linked from">1 page</td><td data-label="Suggested action">Build the page</td></tr>
+          <tr><th scope="row"><code>/automatic-gate-cost/</code></th><td data-label="Linked from">1 page</td><td data-label="Suggested action">Build the page or link to the cost page</td></tr>
+          <tr><th scope="row"><code>/iron-gate-cost/</code></th><td data-label="Linked from">1 page</td><td data-label="Suggested action">Build the page or link to the cost page</td></tr>
+          <tr><th scope="row"><code>/iron-fence-painting/</code></th><td data-label="Linked from">1 page</td><td data-label="Suggested action">Build the page or link to repair</td></tr>
+          <tr><th scope="row"><code>/iron-fence-restoration/</code></th><td data-label="Linked from">1 page</td><td data-label="Suggested action">Build the page or link to repair</td></tr>
+          <tr><th scope="row"><code>/resources/iron-gate-repair-cost/</code></th><td data-label="Linked from">1 page</td><td data-label="Suggested action">Write the article or remove the link</td></tr>
+          <tr><th scope="row"><code>/resources/sliding-vs-swing-driveway-gate/</code></th><td data-label="Linked from">1 page</td><td data-label="Suggested action">Write the article or remove the link</td></tr>
+          <tr><th scope="row"><code>/resources/wrought-iron-vs-ornamental-steel/</code></th><td data-label="Linked from">1 page</td><td data-label="Suggested action">Write the article or remove the link</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3 style="margin-top:2rem">Longest titles (over 60 characters)</h3>
+    <div class="table-wrap">
+      <table class="stack">
+        <thead><tr><th scope="col">Page</th><th scope="col">Characters</th></tr></thead>
+        <tbody>
+          <tr><th scope="row"><code>/resources/electric-vs-automatic-gate/</code></th><td data-label="Characters" class="num">77</td></tr>
+          <tr><th scope="row"><code>/resources/wrought-iron-fence-cost-houston/</code></th><td data-label="Characters" class="num">72</td></tr>
+          <tr><th scope="row"><code>/resources/houston-iron-fence-permit/</code></th><td data-label="Characters" class="num">71</td></tr>
+          <tr><th scope="row"><code>/iron-railings/</code></th><td data-label="Characters" class="num">70</td></tr>
+          <tr><th scope="row"><code>/about/</code></th><td data-label="Characters" class="num">67</td></tr>
+          <tr><th scope="row"><code>/</code> (homepage)</th><td data-label="Characters" class="num">66</td></tr>
+          <tr><th scope="row"><code>/service-areas/river-oaks-houston/</code></th><td data-label="Characters" class="num">66</td></tr>
+          <tr><th scope="row">7 more pages</th><td data-label="Characters" class="num">61 to 64</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3 style="margin-top:2rem">How we tested</h3>
+    <ul>
+      <li>Crawled all 59 URLs in the XML sitemap and checked every internal link found on them (16 extra URLs).</li>
+      <li>Read the HTML of each page for titles, descriptions, headings, canonicals, images, links, structured data and word counts.</li>
+      <li>Measured duplicate content with 5-word phrase overlap between pages in the same group.</li>
+      <li>Ran Google Lighthouse 12 on four page types, mobile and desktop.</li>
+      <li>Checked redirects, response headers, robots.txt, the sitemap and old URL formats.</li>
+      <li>Searched the main buying terms, the business name, phone number and address.</li>
+    </ul>
+    <p class="note"><strong>Limits of this audit:</strong> we did not have access to Google Search Console, Google Analytics, the Google Business Profile or a backlink tool, so index coverage, real traffic, Maps rankings and backlinks are not measured here. Search results vary by location and device. Lab speed tests can differ from real visitor data.</p>
+
+    <h3 style="margin-top:2rem">Sources</h3>
+    <ol class="sources">
+      <li>Houston Iron Fence website, crawled October 6, 2026: <a href="https://www.houstonironfence.com/" target="_blank" rel="noopener">houstonironfence.com</a></li>
+      <li>Building listing for 12837 Louetta Rd: <a href="https://www.loopnet.com/Listing/12837-Louetta-Rd-Cypress-TX/16784689/" target="_blank" rel="noopener">LoopNet</a> and <a href="https://www.har.com/commgate/listing-detail/12837-louetta-rd-cypress-tx-77429/41565977" target="_blank" rel="noopener">HAR.com</a></li>
+      <li>Google Business Profile guidelines: <a href="https://support.google.com/business/answer/3038177" target="_blank" rel="noopener">Guidelines for representing your business on Google</a></li>
+      <li>Google on doorway pages: <a href="https://developers.google.com/search/docs/essentials/spam-policies#doorways" target="_blank" rel="noopener">Spam policies for Google web search</a></li>
+      <li>Google on FAQ rich results: <a href="https://developers.google.com/search/blog/2023/08/howto-faq-changes" target="_blank" rel="noopener">Changes to HowTo and FAQ rich results</a></li>
+      <li>Competitor examples: <a href="https://griffinfencehouston.com/wrought-iron-fence-houston/" target="_blank" rel="noopener">Griffin Fence, wrought iron fence Houston</a> and <a href="https://www.griffinfencehouston.com/wrought-iron-fence-cypress-tx/" target="_blank" rel="noopener">Griffin Fence, Cypress page</a></li>
+      <li>Search samples: US web search results for the queries in section 4, October 6, 2026.</li>
+    </ol>
+  </section>
+
+  <div class="cta-band">
+    <div>
+      <h2>Ready to turn the site into a lead source?</h2>
+      <p>USHU Marketing can take on all five phases or work alongside your team. Send us your questions about any item in this report.</p>
+    </div>
+    <a class="btn" href="https://ushumarketing.com/" target="_blank" rel="noopener">Talk to USHU Marketing</a>
+  </div>
+</div>
+</main>
+
+<footer>
+  <div class="container">
+    <img src="assets/ushu-logo.png" alt="USHU Marketing" width="141" height="26">
+    <span>SEO audit prepared by <a href="https://ushumarketing.com/" target="_blank" rel="noopener">USHU Marketing</a> for Houston Iron Fence. October 2026.</span>
+  </div>
+</footer>
+</body>
+</html>
