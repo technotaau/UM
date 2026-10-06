@@ -1,4 +1,4 @@
-/* Big Love Rescue: site interactions (TechnoTaau Team) */
+/* Big Love Rescue: site interactions */
 (function () {
   document.documentElement.classList.remove('no-js');
 
